@@ -30,6 +30,7 @@ public class f11Client extends javax.swing.JFrame {
         incomePanel = new javax.swing.JPanel();
         incomeLabel = new javax.swing.JLabel();
         incomeTextField = new javax.swing.JTextField();
+        incomeEnterButton = new javax.swing.JButton();
         expensePanel = new javax.swing.JPanel();
         rentLabel = new javax.swing.JLabel();
         electricLabel = new javax.swing.JLabel();
@@ -45,6 +46,7 @@ public class f11Client extends javax.swing.JFrame {
         groceryTextField = new javax.swing.JTextField();
         vehicleMainTextField = new javax.swing.JTextField();
         schoolDebtTextField = new javax.swing.JTextField();
+        expenseEnterButton = new javax.swing.JButton();
         debtPanel = new javax.swing.JPanel();
         canPayLabel = new javax.swing.JLabel();
         willPayLabel = new javax.swing.JLabel();
@@ -53,6 +55,7 @@ public class f11Client extends javax.swing.JFrame {
         willPayTextField = new javax.swing.JTextField();
         debtDoneTextField = new javax.swing.JTextField();
         debtDoneMonthlyLabel = new javax.swing.JLabel();
+        calculateDebtButton = new javax.swing.JButton();
         savingsPanel = new javax.swing.JPanel();
         iSavedLabel = new javax.swing.JLabel();
         iSavedTextField = new javax.swing.JTextField();
@@ -66,6 +69,13 @@ public class f11Client extends javax.swing.JFrame {
 
         incomeLabel.setText("Your Income:");
 
+        incomeEnterButton.setText("Enter");
+        incomeEnterButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                incomeEnterButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout incomePanelLayout = new javax.swing.GroupLayout(incomePanel);
         incomePanel.setLayout(incomePanelLayout);
         incomePanelLayout.setHorizontalGroup(
@@ -74,7 +84,9 @@ public class f11Client extends javax.swing.JFrame {
                 .addComponent(incomeLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(incomeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 533, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(incomeEnterButton)
+                .addGap(0, 463, Short.MAX_VALUE))
         );
         incomePanelLayout.setVerticalGroup(
             incomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -82,9 +94,12 @@ public class f11Client extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(incomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(incomeLabel)
-                    .addComponent(incomeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(368, Short.MAX_VALUE))
+                    .addComponent(incomeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(incomeEnterButton))
+                .addContainerGap(365, Short.MAX_VALUE))
         );
+
+        incomeEnterButton.getAccessibleContext().setAccessibleName("Enter");
 
         tabbedPanelMain.addTab("Income", incomePanel);
 
@@ -102,12 +117,14 @@ public class f11Client extends javax.swing.JFrame {
 
         schoolDebtLabel.setText("School Debt:");
 
+        expenseEnterButton.setText("Enter");
+
         javax.swing.GroupLayout expensePanelLayout = new javax.swing.GroupLayout(expensePanel);
         expensePanel.setLayout(expensePanelLayout);
         expensePanelLayout.setHorizontalGroup(
             expensePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(expensePanelLayout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(29, Short.MAX_VALUE)
                 .addGroup(expensePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(rentLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(electricLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -125,7 +142,9 @@ public class f11Client extends javax.swing.JFrame {
                     .addComponent(groceryTextField)
                     .addComponent(vehicleMainTextField)
                     .addComponent(schoolDebtTextField))
-                .addGap(0, 465, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(expenseEnterButton)
+                .addGap(0, 387, Short.MAX_VALUE))
         );
         expensePanelLayout.setVerticalGroup(
             expensePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,7 +176,8 @@ public class f11Client extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(expensePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(schoolDebtLabel)
-                    .addComponent(schoolDebtTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(schoolDebtTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(expenseEnterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(158, Short.MAX_VALUE))
         );
 
@@ -177,6 +197,13 @@ public class f11Client extends javax.swing.JFrame {
 
         debtDoneMonthlyLabel.setText("Months");
 
+        calculateDebtButton.setText("Calculate");
+        calculateDebtButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calculateDebtButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout debtPanelLayout = new javax.swing.GroupLayout(debtPanel);
         debtPanel.setLayout(debtPanelLayout);
         debtPanelLayout.setHorizontalGroup(
@@ -192,8 +219,10 @@ public class f11Client extends javax.swing.JFrame {
                     .addComponent(debtDoneTextField, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(canPayTextField))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(debtDoneMonthlyLabel)
-                .addGap(0, 434, Short.MAX_VALUE))
+                .addGroup(debtPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(debtDoneMonthlyLabel)
+                    .addComponent(calculateDebtButton))
+                .addGap(0, 388, Short.MAX_VALUE))
         );
         debtPanelLayout.setVerticalGroup(
             debtPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,9 +232,11 @@ public class f11Client extends javax.swing.JFrame {
                     .addComponent(canPayLabel)
                     .addComponent(canPayTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(debtPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(willPayLabel)
-                    .addComponent(willPayTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(debtPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(debtPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(willPayLabel)
+                        .addComponent(willPayTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(calculateDebtButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(debtPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(debtDoneLabel)
@@ -272,6 +303,14 @@ public class f11Client extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void incomeEnterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incomeEnterButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_incomeEnterButtonActionPerformed
+
+    private void calculateDebtButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateDebtButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_calculateDebtButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -308,6 +347,7 @@ public class f11Client extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton calculateDebtButton;
     private javax.swing.JLabel canPayLabel;
     private javax.swing.JTextField canPayTextField;
     private javax.swing.JLabel carInsuranceLabel;
@@ -318,12 +358,14 @@ public class f11Client extends javax.swing.JFrame {
     private javax.swing.JPanel debtPanel;
     private javax.swing.JLabel electricLabel;
     private javax.swing.JTextField electricTextField;
+    private javax.swing.JButton expenseEnterButton;
     private javax.swing.JPanel expensePanel;
     private javax.swing.JLabel groceryLabel;
     private javax.swing.JTextField groceryTextField;
     private javax.swing.JLabel iSavedLabel;
     private javax.swing.JLabel iSavedMonthlyLabel;
     private javax.swing.JTextField iSavedTextField;
+    private javax.swing.JButton incomeEnterButton;
     private javax.swing.JLabel incomeLabel;
     private javax.swing.JPanel incomePanel;
     private javax.swing.JTextField incomeTextField;

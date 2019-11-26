@@ -74,7 +74,9 @@
                       <Component id="incomeLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="incomeTextField" min="-2" pref="180" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="533" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="incomeEnterButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="463" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -85,8 +87,9 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="incomeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="incomeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="incomeEnterButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="368" max="32767" attributes="0"/>
+                      <EmptySpace pref="365" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -98,6 +101,17 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="incomeTextField">
+            </Component>
+            <Component class="javax.swing.JButton" name="incomeEnterButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Enter"/>
+              </AccessibilityProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="incomeEnterButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -114,7 +128,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="rentLabel" alignment="1" max="32767" attributes="0"/>
                           <Component id="electricLabel" alignment="1" max="32767" attributes="0"/>
@@ -134,7 +148,9 @@
                           <Component id="vehicleMainTextField" alignment="0" max="32767" attributes="0"/>
                           <Component id="schoolDebtTextField" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="465" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="expenseEnterButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="387" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -175,6 +191,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="schoolDebtLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="schoolDebtTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="expenseEnterButton" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="158" max="32767" attributes="0"/>
                   </Group>
@@ -231,6 +248,11 @@
             </Component>
             <Component class="javax.swing.JTextField" name="schoolDebtTextField">
             </Component>
+            <Component class="javax.swing.JButton" name="expenseEnterButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="debtPanel">
@@ -258,8 +280,11 @@
                           <Component id="canPayTextField" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="debtDoneMonthlyLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="434" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="debtDoneMonthlyLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="calculateDebtButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="388" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -272,9 +297,12 @@
                           <Component id="canPayTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="willPayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="willPayTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="willPayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="willPayTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="calculateDebtButton" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -325,6 +353,14 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Months"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="calculateDebtButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Calculate"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calculateDebtButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
