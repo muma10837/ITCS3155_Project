@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Financial// Help Tool"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="tabbedPanelMain" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="tabbedPanelMain" min="-2" pref="433" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="tabbedPanelMain">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="incomePanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Income">
+                <Property name="tabTitle" type="java.lang.String" value="Income"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="incomeLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="incomeTextField" min="-2" pref="180" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="incomeEnterButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="463" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="incomeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="incomeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="incomeEnterButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="365" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="incomeLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Your Income:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="incomeTextField">
+            </Component>
+            <Component class="javax.swing.JButton" name="incomeEnterButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="incomeEnterButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="expensePanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Expenses">
+                <Property name="tabTitle" type="java.lang.String" value="Expenses"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="rentLabel" alignment="1" max="32767" attributes="0"/>
+                          <Component id="electricLabel" alignment="1" max="32767" attributes="0"/>
+                          <Component id="carInsuranceLabel" alignment="1" max="32767" attributes="0"/>
+                          <Component id="phoneLabel" alignment="1" max="32767" attributes="0"/>
+                          <Component id="groceryLabel" alignment="1" max="32767" attributes="0"/>
+                          <Component id="vehicleMaintanenceLabel" alignment="1" max="32767" attributes="0"/>
+                          <Component id="schoolDebtLabel" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="rentTextField" alignment="0" pref="180" max="32767" attributes="0"/>
+                          <Component id="electricTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="carTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="phoneTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="groceryTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="vehicleMainTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="schoolDebtTextField" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="expenseEnterButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="387" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="rentLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="rentTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="electricLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="electricTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="carInsuranceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="carTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="phoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="phoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="groceryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="groceryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="vehicleMaintanenceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="vehicleMainTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="schoolDebtLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="schoolDebtTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="expenseEnterButton" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="158" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="rentLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Rent/House Payment:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="electricLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Electric:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="carInsuranceLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Car Insurance:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="phoneLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Phone Bill:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="groceryLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Groceries:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="vehicleMaintanenceLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vehicle Maintanence:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="schoolDebtLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="School Debt:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="rentTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="electricTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="carTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="phoneTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="groceryTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="vehicleMainTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="schoolDebtTextField">
+            </Component>
+            <Component class="javax.swing.JButton" name="expenseEnterButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="expenseEnterButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="debtPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Debt De-Escalator">
+                <Property name="tabTitle" type="java.lang.String" value="Debt De-Escalator"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="canPayLabel" alignment="0" max="32767" attributes="0"/>
+                          <Component id="willPayLabel" alignment="0" pref="130" max="32767" attributes="0"/>
+                          <Component id="debtDoneLabel" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="willPayTextField" alignment="0" pref="180" max="32767" attributes="0"/>
+                          <Component id="debtDoneTextField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="canPayTextField" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="debtDoneMonthlyLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="calculateDebtButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="388" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="canPayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="canPayTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="willPayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="willPayTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="calculateDebtButton" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="debtDoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="debtDoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="debtDoneMonthlyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="298" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="canPayLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="I Can Afford To Pay:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="willPayLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="I Would Like To Pay:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="debtDoneLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Debt Paid Within:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="canPayTextField">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="willPayTextField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="debtDoneTextField">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="debtDoneMonthlyLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Months"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="calculateDebtButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Calculate"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calculateDebtButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="savingsPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Savings">
+                <Property name="tabTitle" type="java.lang.String" value="Savings"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="iSavedLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="iSavedTextField" min="-2" pref="180" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="iSavedMonthlyLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="487" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="iSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iSavedTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iSavedMonthlyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="368" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="iSavedLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="I Am Saving:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="iSavedTextField">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="iSavedMonthlyLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Monthly"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
