@@ -10,6 +10,20 @@
  */
 public class f11Client extends javax.swing.JFrame {
 
+    
+    double income = 0;
+    double savings = 0;
+    double rent = 0;
+    double electric = 0;
+    double carI = 0;
+    double phone = 0;
+    double groceries = 0;
+    double vehicleM = 0;
+    double schoolD = 0;
+    double toPay = 0;
+    double afford = 0;
+    double paidW = 0;
+    
     /**
      * Creates new form f11Client
      */
@@ -99,8 +113,6 @@ public class f11Client extends javax.swing.JFrame {
                 .addContainerGap(365, Short.MAX_VALUE))
         );
 
-        incomeEnterButton.getAccessibleContext().setAccessibleName("Enter");
-
         tabbedPanelMain.addTab("Income", incomePanel);
 
         rentLabel.setText("Rent/House Payment:");
@@ -118,6 +130,11 @@ public class f11Client extends javax.swing.JFrame {
         schoolDebtLabel.setText("School Debt:");
 
         expenseEnterButton.setText("Enter");
+        expenseEnterButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expenseEnterButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout expensePanelLayout = new javax.swing.GroupLayout(expensePanel);
         expensePanel.setLayout(expensePanelLayout);
@@ -305,11 +322,30 @@ public class f11Client extends javax.swing.JFrame {
 
     private void incomeEnterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incomeEnterButtonActionPerformed
         // TODO add your handling code here:
+        income = Double.parseDouble(incomeTextField.getText());
     }//GEN-LAST:event_incomeEnterButtonActionPerformed
 
     private void calculateDebtButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateDebtButtonActionPerformed
         // TODO add your handling code here:
+        toPay = Double.parseDouble(willPayTextField.getText());
+        savings = afford - toPay;
+        paidW = schoolD/toPay;
+        debtDoneTextField.setText(Double.toString(paidW));
+        iSavedTextField.setText(Double.toString(savings));
     }//GEN-LAST:event_calculateDebtButtonActionPerformed
+
+    private void expenseEnterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expenseEnterButtonActionPerformed
+        // TODO add your handling code here:
+        rent = Double.parseDouble(rentTextField.getText());
+        electric = Double.parseDouble(electricTextField.getText());
+        carI = Double.parseDouble(carTextField.getText());
+        phone = Double.parseDouble(phoneTextField.getText());
+        groceries = Double.parseDouble(groceryTextField.getText());
+        vehicleM = Double.parseDouble(vehicleMainTextField.getText());
+        schoolD = Double.parseDouble(schoolDebtTextField.getText());
+        afford = income - (rent + electric + carI + phone + groceries + vehicleM);
+        canPayTextField.setText(Double.toString(afford));
+    }//GEN-LAST:event_expenseEnterButtonActionPerformed
 
     /**
      * @param args the command line arguments

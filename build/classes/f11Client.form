@@ -106,9 +106,6 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Enter"/>
-              </AccessibilityProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="incomeEnterButtonActionPerformed"/>
               </Events>
@@ -252,6 +249,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="expenseEnterButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
